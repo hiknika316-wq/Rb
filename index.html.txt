@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            /* НАЗВАНИЕ ФАЙЛА ТВОЕГО ФОНА (должен лежать в той же папке) */
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6); /* Темная подложка, чтобы текст читался на любом фоне */
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #007bff; /* Цвет кнопки (сейчас синий) */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Цвет кнопки при наведении */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- НАЗВАНИЕ ФАЙЛА ЛОГОТИПА (должен лежать в той же папке) -->
+        <img src="logo.png" alt="Logo" class="logo">
+        
+        <!-- ТВОЙ ЗАГОЛОВОК (пиши вместо слов "Заголовок сайта") -->
+        <h1>Заголовок сайта</h1>
+        
+        <!-- ТВОЙ ТЕКСТ (пиши вместо текста ниже) -->
+        <p>Здесь будет твое короткое и красивое описание. Буквально пара предложений, чтобы не перегружать страницу.</p>
+        
+        <!-- ТВОЯ ССЫЛКА И ТЕКСТ КНОПКИ -->
+        <!-- Вместо https://google.com ставь свою ссылку, а вместо "Перейти" — свой текст -->
+        <a href="https://google.com" class="btn">Перейти</a>
+        
+    </div>
+
+</body>
+</html>
