@@ -9,38 +9,41 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            /* НАЗВАНИЕ ФАЙЛА ТВОЕГО ФОНА (должен лежать в той же папке) */
+            /* Картинка фона */
             background: url('bg.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             display: flex;
+            flex-direction: column; /* Выстраивает логотип и квадрат друг под другом */
             justify-content: center;
             align-items: center;
             color: #fff;
         }
+        .logo {
+            max-width: 240px; /* Крупный размер логотипа */
+            height: auto;
+            margin-bottom: 20px; /* Отступ от логотипа вниз до черного квадрата */
+            filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.5)); /* Тень, чтобы логотип не сливался с фоном */
+        }
         .container {
             text-align: center;
-            background: rgba(0, 0, 0, 0.6); /* Темная подложка, чтобы текст читался на любом фоне */
+            background: rgba(0, 0, 0, 0.6); /* Полупрозрачный темный фон карточки */
             padding: 40px;
             border-radius: 15px;
             max-width: 400px;
             width: 90%;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
-        .logo {
-            max-width: 120px;
-            height: auto;
-            margin-bottom: 20px;
-        }
         h1 {
             font-size: 26px;
+            margin-top: 0;
             margin-bottom: 15px;
         }
         p {
             font-size: 16px;
             margin-bottom: 30px;
             color: #e0e0e0;
-            line-height: 1.5;
+            line-height: 1.6; /* Красивый отступ между строками */
         }
         .btn {
             display: inline-block;
@@ -53,27 +56,33 @@
             transition: 0.3s ease;
         }
         .btn:hover {
-            background-color: #0056b3; /* Цвет кнопки при наведении */
-            transform: scale(1.05);
+            background-color: #0056b3; /* Цвет при наведении курсора */
+            transform: scale(1.05); /* Кнопка слегка увеличивается при наведении */
         }
     </style>
 </head>
 <body>
 
+    <!-- ЛОГОТИП (НАД ЧЕРНЫМ КВАДРАТОМ) -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- КАРТОЧКА С ТЕКСТОМ И КНОПКОЙ -->
     <div class="container">
         
-        <!-- НАЗВАНИЕ ФАЙЛА ЛОГОТИПА (должен лежать в той же папке) -->
-        <img src="logo.png" alt="Logo" class="logo">
+        <!-- ТВОЙ ЗАГОЛОВОК (можешь поменять текст внутри) -->
+        <h1>Подтверди свой возврат и получи доступ к чату !</h1>
         
-        <!-- ТВОЙ ЗАГОЛОВОК (пиши вместо слов "Заголовок сайта") -->
-        <h1>Заголовок сайта</h1>
-        
-        <!-- ТВОЙ ТЕКСТ (пиши вместо текста ниже) -->
-        <p>Здесь будет твое короткое и красивое описание. Буквально пара предложений, чтобы не перегружать страницу.</p>
+        <!-- ТВОЙ ТЕКСТ С ПЕРЕНОСАМИ СТРОК -->
+        <p>
+            Теперь игроки из России могут получить чат и подтвердить возврост по верефикации через МАХ<br>
+            1 Идентифицируйся через MAX<br>
+            2 Введи свой username<br>
+            3 В течение 24-х часов получи статус Verified и доступ к чату
+        </p>
         
         <!-- ТВОЯ ССЫЛКА И ТЕКСТ КНОПКИ -->
-        <!-- Вместо https://google.com ставь свою ссылку, а вместо "Перейти" — свой текст -->
-        <a href="https://google.com" class="btn">Перейти</a>
+        <!-- Вместо https://google.com вставляй ссылку. Главное — НЕ сотри кавычки! -->
+        <a href="https://robloxprem.com" class="btn">Начать</a>
         
     </div>
 
